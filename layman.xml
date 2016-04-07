@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="testing" status="unofficial">
+    <name><![CDATA[DennysOverlay]]></name>
+    <description lang="en"><![CDATA[My gentoo overlay]]></description>
+    <homepage>https://github.com/denwerko/DennysOverlay</homepage>
+    <owner type="person">
+      <name><![CDATA[denwerko]]></name>
+      <!--<email></email>-->
+    </owner>
+    <source type="git">git@github.com:denwerko/DennysOverlay.git</source>
+    <source type="git">https://github.com/denwerko/DennysOverlay.git</source>
+  </repo>
+</repositories>
