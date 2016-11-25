@@ -191,13 +191,13 @@ src_compile() {
 	# it by itself, pass this.
 
 	cd "${NV_SRC}"
-	grep MODULE_LICENSE("NVIDIA") -r |cut -f 1 -d ":"| while read
+	grep "MODULE_LICENSE(\"NVIDIA\")" -r |cut -f 1 -d ":"| while read
 	do
-		sed -i s/MODULE_LICENSE(\"NVIDIA\")/MODULE_LICENSE(\"GPL\")/g $REPLY
+		sed -i "s/MODULE_LICENSE(\"NVIDIA\")/MODULE_LICENSE(\"GPL\")/g" $REPLY
 	done
-	grep MODULE_LICENSE("MIT") -r |cut -f 1 -d ":"| while read
+	grep "MODULE_LICENSE(\"MIT\")" -r |cut -f 1 -d ":"| while read
 	do
-		sed -i s/MODULE_LICENSE(\"NVIDIA\")/MODULE_LICENSE(\"GPL\")/g $REPLY
+		sed -i "s/MODULE_LICENSE(\"MIT\")/MODULE_LICENSE(\"GPL\")/g" $REPLY
 	done
 
 
